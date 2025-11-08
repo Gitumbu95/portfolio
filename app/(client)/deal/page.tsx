@@ -1,8 +1,9 @@
 import Container from "@/components/Container";
 import ProductCard from "@/components/ProductCard";
 import Title from "@/components/ui/Title";
-import { getDealProducts } from "@sanity/queries";
+import { getDealProducts } from "@/sanity/queries";
 import React from "react";
+import { Product } from "@/sanity.types";
 
 const DealPage = async () => {
   const products = await getDealProducts();
@@ -13,9 +14,8 @@ const DealPage = async () => {
           Hot Deals of the Week
         </Title>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2.5">
-          {products?.map((product) => (
-            //@ts-ignore
-            <ProductCard key={product?._id} product={product} />
+          {products?.map((product: Product, index: number) => (
+            <ProductCard key={product._id || index} product={product} />
           ))}
         </div>
       </Container>
