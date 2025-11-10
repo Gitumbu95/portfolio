@@ -358,7 +358,9 @@ export type Category = {
     hotspot?: SanityImageHotspot;
     crop?: SanityImageCrop;
     _type: "image";
+    
   };
+  productCount?: number;
 };
 
 export type SanityImageCrop = {

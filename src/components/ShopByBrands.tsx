@@ -1,9 +1,9 @@
 import React from "react";
 import Title from "./ui/Title";
 import Link from "next/link";
-import { getAllBrands } from "../../sanity/queries";
+import { getAllBrands } from "@/sanity/queries";
 import Image from "next/image";
-import { urlFor } from "../../sanity/lib/image";
+import { urlFor } from "@/sanity/lib/image";
 import { GitCompareArrows, Headset, ShieldCheck, Truck } from "lucide-react";
 
 const extraData = [
