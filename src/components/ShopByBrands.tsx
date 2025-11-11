@@ -5,6 +5,7 @@ import { getAllBrands } from "@/sanity/queries";
 import Image from "next/image";
 import { urlFor } from "@/sanity/lib/image";
 import { GitCompareArrows, Headset, ShieldCheck, Truck } from "lucide-react";
+import { Brand } from "@/sanity.types";
 
 const extraData = [
   {
