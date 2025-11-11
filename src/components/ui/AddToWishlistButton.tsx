@@ -1,5 +1,5 @@
 import React from 'react';
-import { Product } from '../../../sanity.types';
+import { Product } from '@/sanity.types';
 import { Heart } from 'lucide-react';
 import { cn } from '../../../lib/utils';
 

@@ -428,7 +428,7 @@ export type Slug = {
 
 export type AllSanitySchemaTypes = SanityImagePaletteSwatch | SanityImagePalette | SanityImageDimensions | SanityFileAsset | Geopoint | Address | Blogcategory | Blog | Author | Order | Product | Brand | BlockContent | Category | SanityImageCrop | SanityImageHotspot | SanityImageAsset | SanityAssetSourceData | SanityImageMetadata | Slug;
 export declare const internalGroqTypeReferenceTo: unique symbol;
-// Source: ./sanity/queries/query.ts
+// Source: @/sanity/queries/query.ts
 // Variable: BRANDS_QUERY
 // Query: *[_type=='brand'] | order(name asc)
 export type BRANDS_QUERYResult = Array<{

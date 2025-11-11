@@ -6,7 +6,7 @@ import React from "react";
 import HomeBanner from "@/components/ui/HomeBanner";
 import ProductGrid from "@/components/ProductGrid";
 import HomeCategories from "@/components/HomeCategories";
-import { getCategories } from "../../sanity/queries";
+import { getCategories } from "@/sanity/queries";
 import ShopByBrands from "@/components/ShopByBrands";
 import LatestBlog from "@/components/LatestBlog";
 
